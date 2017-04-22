@@ -19,5 +19,9 @@ pip install -r requirements.txt
 python manage.py runserver
 ```
 
+### What i learnt
+* Running django test using travis
+* Writting unittest for views in django
+
 ### TODO
 Deployment in heroku.
