@@ -1,6 +1,13 @@
 language: python
 python:
     - "3.4"
+
+before_install:
+    - export DJANGO_SETTINGS_MODULE=ci_cd_django.settings
+    - export PYTHONPATH=$HOME/builds/judeaugustinej/ci_cd_django
+    - export PIP_USE_MIRRORS=true
+
 install:
     - pip install -r requirements.txt
+
 script: python manage test ci_cd
